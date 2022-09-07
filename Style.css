@@ -9,7 +9,7 @@
 }
 body {
   font-family: "Inter";
-  
+
 }
 /* =============================================starting navbar============================================================== */
 #navigation {
@@ -51,16 +51,27 @@ body {
 }
 
 /* =============================================Ending navbar============================================================== */
-section {
-  height: auto;
-}
+
 
 /* =============================================Starting Home section============================================================== */
 #home {
-  background-color: #3e3c6e;
+  background-color: #3e3c6e !important;
+  background: url(assets/images/Vector.png) center bottom/cover no-repeat;
+  background-size:1530px 338px;
   display: flex;
   justify-content: center;
-  position: relative;
+
+}
+#home div:nth-child(1)
+{
+  padding: 50px;
+
+}
+#home div:nth-child(2)
+{
+  display: flex;
+  justify-content: center;
+
 }
 #home div h2 {
   font-weight: 500;
@@ -99,29 +110,45 @@ section {
   height: 51px;
   font-size: 32px;
   line-height: 39px;
+  margin-top:60px ;
 }
 #home div img {
   width: 605px;
   height: 503px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
 }
+
 #home div:nth-child(3) span {
   color: #ff959b;
-  /* transform: rotate(90deg); */
   position: absolute;
+  top:200px ;
+  right: 20px;
+  transform: rotate(90deg);
 
-  right: -151.67%;
+}
+#home div:nth-child(3) .rotate-icon {
+  transform: rotate(90deg);
 
-  bottom: 800px;
+}
+#home div .line {
+  border-top: 1px #ff959b solid;
+  width: 96px;
+  position: absolute;
+  top:300px ;
+  right:5px;
+
+  transform: rotate(90deg);
+}
+#home div .rotate-icon {
+
+  position: absolute;
+  top:400px ;
+  right:5px;
 }
 #home div:nth-child(3) i {
   color: white;
   width: 25px;
   height: 25px;
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 
 #home div:nth-child(3) div:nth-child(2) {
@@ -226,7 +253,7 @@ box-shadow: inset -25px -1px 42px 3px #FFFFFF;
 /* =============================================Starting portfolio section============================================================== */
 
 
-  
+
 #portfolio{
   display: flex;
   justify-content: center;
@@ -258,7 +285,7 @@ text-align: left;
   left: 0px;
   top: 0px;
   border-radius: 10px;
-  
+
 }
 .row {
   display: grid;
