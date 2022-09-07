@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Inter";
+  src: url(assets/Inter/static/Inter-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter";
+}
+/* =============================================starting navbar============================================================== */
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 115px;
+  height: 91px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#navigation nav {
+  padding-top: 8px 0px;
+}
+#navigation img {
+  height: 72px;
+  width: 76px;
+}
+#navigation button {
+  font-size: 20px;
+  width: 106px;
+  height: 29px;
+  background: #3e3c6e;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+}
+#navigation a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+#navigation nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* =============================================Ending navbar============================================================== */
+section {
+  height: 503px;
+}
+
+/* =============================================Starting Home section============================================================== */
+#home {
+  background-color: #3e3c6e;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#home div h2 {
+  font-weight: 500;
+  line-height: 44px;
+  color: white;
+}
+#home div h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  text-align: left;
+  color: #ff959b;
+}
+#home div h1 span {
+  font-weight: 800;
+  letter-spacing: 0em;
+  color: white;
+}
+#home div p {
+  color: white;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+#home div button {
+  color: black;
+  background-color: #ff959b;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  width: 253px;
+  height: 51px;
+  font-size: 32px;
+  line-height: 39px;
+}
+#home div img {
+  width: 605px;
+  height: 503px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+#home div:nth-child(3) span {
+  color: #ff959b;
+  /* transform: rotate(90deg); */
+  position: absolute;
+
+right: -151.67%;
+
+bottom: 800px;
+
+}
+#home div:nth-child(3) i {
+  color: white;
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+}
+
+#home div:nth-child(3) div:nth-child(2) {
+  position: absolute;
+  
+
+}
+
+#home div:nth-child(3) {
+  /* position: absolute; */
+
+
+  transform: rotate(90deg);
+  letter-spacing: 0.235em;
+}
+
+#home div .line {
+  border: 1px #ff959b solid;
+  width: 96px;
+position: relative;
+  right: -259.67%;
+
+  bottom: 808px;
+  /* transform: rotate(90deg); */
+}
+
+/* Contacto */
+
+/* identical to box height */
+
+/* Inside auto layout */
+
+/* =============================================Ending Home section============================================================== */
