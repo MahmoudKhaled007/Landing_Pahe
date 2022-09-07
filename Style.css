@@ -129,7 +129,11 @@ body {
 
   transform: rotate(90deg);
 }
+<<<<<<< Updated upstream
 #home div .rotate-icon {
+=======
+#home div .position-icon {
+>>>>>>> Stashed changes
   position: absolute;
   top: 400px;
   right: 5px;
@@ -154,7 +158,11 @@ body {
   flex-direction: row;
   align-content: center;
   align-items: center;
+<<<<<<< Updated upstream
   padding: 70px;
+=======
+  margin-top: 20px;
+>>>>>>> Stashed changes
 }
 #about div h1 {
   color: #3e3c6e;
@@ -197,7 +205,11 @@ body {
   margin-top: 30px;
 }
 
+<<<<<<< Updated upstream
 #about div:nth-child(1) img {
+=======
+#secondSection div:nth-child(1) img {
+>>>>>>> Stashed changes
   position: absolute;
   width: 107px;
   height: 450px;
@@ -206,20 +218,31 @@ body {
   box-shadow: inset -25px -1px 42px 3px #ffffff;
 }
 
+<<<<<<< Updated upstream
 #about div:nth-child(2) img {
+=======
+#secondSection div:nth-child(2) img {
+>>>>>>> Stashed changes
   position: relative;
   left: 0px;
   top: 0px;
   box-shadow: inset -25px -1px 42px 3px #ffffff;
 }
+<<<<<<< Updated upstream
 /* =============================================Ending about section============================================================== */
+=======
+/* =============================================Ending second section============================================================== */
+>>>>>>> Stashed changes
 
 /* =============================================Starting portfolio section============================================================== */
 
 #portfolio {
+<<<<<<< Updated upstream
   /* position: relative;   */
 }
 #portfolio div:nth-child(2) {
+=======
+>>>>>>> Stashed changes
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -229,8 +252,11 @@ body {
   justify-content: left;
   background-color: aqua;
 }
+<<<<<<< Updated upstream
 /* 
 
+=======
+>>>>>>> Stashed changes
 #portfolio h2 {
   font-size: 36px;
   font-weight: 700;
@@ -240,14 +266,41 @@ body {
   text-align: left;
   color: #3e3c6e;
   margin-top: 60px;
+<<<<<<< Updated upstream
 }
 
 #portfolio div:nth-child(2) img{
+=======
+}
+#portfolio div:nth-child(1) P {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#portfolio div img {
+>>>>>>> Stashed changes
   height: 417px;
   width: 417px;
   left: 0px;
   top: 0px;
   border-radius: 10px;
+<<<<<<< Updated upstream
 } */
+=======
+}
+.row {
+  display: grid;
+  justify-content: center;
+  position: relative;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+>>>>>>> Stashed changes
 
 /* =============================================Ending portfolio section============================================================== */
