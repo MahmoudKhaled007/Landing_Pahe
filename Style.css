@@ -51,26 +51,20 @@ body {
 
 /* =============================================Ending navbar============================================================== */
 
-
 /* =============================================Starting Home section============================================================== */
 #home {
-  background-color: #3e3c6e !important; 
+  background-color: #3e3c6e !important;
   background: url(assets/images/Vector.png) center bottom/cover no-repeat;
-  background-size:1530px 338px;
+  background-size: 1530px 338px;
   display: flex;
   justify-content: center;
-  
 }
-#home div:nth-child(1)
-{
+#home div:nth-child(1) {
   padding: 50px;
-
 }
-#home div:nth-child(2) 
-{
+#home div:nth-child(2) {
   display: flex;
   justify-content: center;
-
 }
 #home div h2 {
   font-weight: 500;
@@ -109,7 +103,7 @@ body {
   height: 51px;
   font-size: 32px;
   line-height: 39px;
-  margin-top:60px ;
+  margin-top: 60px;
 }
 #home div img {
   width: 605px;
@@ -119,29 +113,26 @@ body {
 #home div:nth-child(3) span {
   color: #ff959b;
   position: absolute;
-  top:200px ;
+  top: 200px;
   right: 20px;
   transform: rotate(90deg);
-
 }
 #home div:nth-child(3) .rotate-icon {
   transform: rotate(90deg);
-
 }
 #home div .line {
   border-top: 1px #ff959b solid;
   width: 96px;
-  position: absolute; 
-  top:300px ;
-  right:5px;
+  position: absolute;
+  top: 300px;
+  right: 5px;
 
   transform: rotate(90deg);
 }
 #home div .rotate-icon {
-
-  position: absolute; 
-  top:400px ;
-  right:5px;
+  position: absolute;
+  top: 400px;
+  right: 5px;
 }
 #home div:nth-child(3) i {
   color: white;
@@ -152,8 +143,8 @@ body {
 
 /* =============================================Ending Home section============================================================== */
 
-/* =============================================Starting second section============================================================== */
-#secondSection {
+/* =============================================Starting about section============================================================== */
+#about {
   display: flex;
   justify-content: space-evenly;
   position: relative;
@@ -163,17 +154,16 @@ body {
   flex-direction: row;
   align-content: center;
   align-items: center;
-margin-top: 20px;
+  padding: 70px;
 }
-#secondSection div h1 {
+#about div h1 {
   color: #3e3c6e;
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-
 }
 
-#secondSection div p {
+#about div p {
   padding-top: 20px;
   height: 286px;
   width: 817px;
@@ -181,16 +171,14 @@ margin-top: 20px;
   top: 59px;
   border-radius: nullpx;
 
-font-size: 32px;
-font-weight: 200;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-
-
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-#secondSection div button {
+#about div button {
   color: black;
   background-color: #ff959b;
   border: none;
@@ -209,73 +197,57 @@ text-align: left;
   margin-top: 30px;
 }
 
-#secondSection div:nth-child(1) img {
-position: absolute;
-width: 107px;
-height: 450px;
-left: 0px;
-top: 0px;
-box-shadow: inset -25px -1px 42px 3px #FFFFFF;
-
+#about div:nth-child(1) img {
+  position: absolute;
+  width: 107px;
+  height: 450px;
+  left: 0px;
+  top: 0px;
+  box-shadow: inset -25px -1px 42px 3px #ffffff;
 }
 
-#secondSection div:nth-child(2) img {
-position: relative;
-left: 0px;
-top: 0px;
-box-shadow: inset -25px -1px 42px 3px #FFFFFF;
+#about div:nth-child(2) img {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  box-shadow: inset -25px -1px 42px 3px #ffffff;
 }
-/* =============================================Ending second section============================================================== */
-
+/* =============================================Ending about section============================================================== */
 
 /* =============================================Starting portfolio section============================================================== */
 
-
-
-#portfolio{
-  display: flex;
-  justify-content: center;
+#portfolio {
   /* position: relative;   */
 }
-#portfolio h2{
+#portfolio div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+#portfolio div:nth-child(1) {
+  display: flex;
+  justify-content: left;
+  background-color: aqua;
+}
+/* 
+
+#portfolio h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
   display: flex;
   text-align: left;
-  coloR: #3E3C6E;
+  color: #3e3c6e;
   margin-top: 60px;
-
 }
-#portfolio div:nth-child(1) P{
 
-font-size: 26px;
-font-weight: 400;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
-}
-#portfolio div img{
-
+#portfolio div:nth-child(2) img{
   height: 417px;
   width: 417px;
   left: 0px;
   top: 0px;
   border-radius: 10px;
-
-}
-.row {
-  display: grid;
-  justify-content: center;
-  position: relative;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-
+} */
 
 /* =============================================Ending portfolio section============================================================== */
