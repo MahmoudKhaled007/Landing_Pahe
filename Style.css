@@ -146,15 +146,9 @@ body {
 /* =============================================Starting about section============================================================== */
 #about {
   display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  width: auto;
-  height: auto;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
-  padding: 70px;
 }
 #about div h1 {
   color: #3e3c6e;
@@ -167,10 +161,6 @@ body {
   padding-top: 20px;
   height: 286px;
   width: 817px;
-  left: 5px;
-  top: 59px;
-  border-radius: nullpx;
-
   font-size: 32px;
   font-weight: 200;
   line-height: 39px;
@@ -189,7 +179,6 @@ body {
   font-size: 24px;
   line-height: 39px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 15px;
@@ -198,40 +187,44 @@ body {
 }
 
 #about div:nth-child(1) img {
-  position: absolute;
   width: 107px;
   height: 450px;
-  left: 0px;
-  top: 0px;
   box-shadow: inset -25px -1px 42px 3px #ffffff;
 }
 
 #about div:nth-child(2) img {
-  position: relative;
-  left: 0px;
-  top: 0px;
   box-shadow: inset -25px -1px 42px 3px #ffffff;
+  width:407.81px;
+  height: 390.63px;
+
 }
 /* =============================================Ending about section============================================================== */
 
 /* =============================================Starting portfolio section============================================================== */
 
 #portfolio {
-  /* position: relative;   */
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: column;
 }
+/* #portfolio div:nth-child(1) {
+  } */
 #portfolio div:nth-child(2) {
   display: flex;
   justify-content: center;
+  align-content: center;
   gap: 60px;
 }
-#portfolio div:nth-child(1) {
-  display: flex;
-  justify-content: left;
-  background-color: aqua;
+#portfolio div:nth-child(1) h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #3E3C6E;
+padding-top: 50px;
 }
-/* 
 
-#portfolio h2 {
+/* #portfolio h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
@@ -248,6 +241,6 @@ body {
   left: 0px;
   top: 0px;
   border-radius: 10px;
-} */
+} */ 
 
 /* =============================================Ending portfolio section============================================================== */
