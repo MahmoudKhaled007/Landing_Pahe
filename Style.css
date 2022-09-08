@@ -56,7 +56,7 @@ body {
 #navigation nav ul li a {
   position: relative;
 }
-#navigation nav ul li a:after {
+#navigation nav ul li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -68,7 +68,7 @@ body {
   background: #ff959b;
   height: 1px;
 }
-#navigation nav ul li a:hover:after {
+#navigation nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -76,17 +76,17 @@ body {
   transition: all 2s;
 }
 
-#navigation nav ul li a:after {
+#navigation nav ul li a::after {
   text-align: left;
   content: ".";
   margin: 0;
   opacity: 0;
 }
-#navigation nav ul li a:hover {
+#navigation nav ul li a::hover {
   color: rgb(43, 43, 43);
   z-index: 1;
 }
-#navigation nav ul li a:hover:after {
+#navigation nav ul li a:hover::after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
@@ -504,7 +504,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0px;
+  padding: 0px 0px;
   height: 91px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #8873ef;
@@ -534,16 +534,15 @@ body {
 }
 #footer div ul li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 #footer div ul li a {
   display: block;
-  padding: 15px;
+  /* padding: 10px; */
   text-decoration: none;
   color: #aaa;
   font-weight: 800;
-  margin: 0 10px;
 }
 
 #footer div ul li a:hover {
@@ -553,7 +552,7 @@ body {
 #footer div ul li a {
   position: relative;
 }
-#footer div ul li a:after {
+#footer div ul li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -565,7 +564,7 @@ body {
   background: #391472;
   height: 1px;
 }
-#footer div ul li a:hover:after {
+#footer div ul li a:hover::after {
   width: 100%;
 }
 
@@ -573,7 +572,7 @@ body {
   transition: all 2s;
 }
 
-#footer div ul li a:after {
+#footer div ul li a::after {
   text-align: left;
   content: ".";
   margin: 0;
@@ -583,7 +582,7 @@ body {
   color: #fff;
   z-index: 1;
 }
-#footer div ul li a:hover:after {
+#footer div ul li a:hover::after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
