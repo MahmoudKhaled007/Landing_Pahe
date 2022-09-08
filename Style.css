@@ -247,3 +247,66 @@ color: #000000;
 }
 
 /* =============================================Ending portfolio section============================================================== */
+
+
+/* =============================================Starting Footer section============================================================== */
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 115px;
+  height: 91px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #8873ef;
+  position: relative;
+  padding-right: 70px ;
+}
+
+#footer  .footer-icon-image {
+  position: absolute;
+  height: 91px;
+  width: 247px;
+  border-radius: 0px;
+  left: 90%;
+
+
+}
+#footer  .footer-icons {
+color: white;
+font-size: 27px;
+}
+#footer  .footer-logo {
+  position: absolute;
+  height: 72.11663818359375px;
+  width: 75.9639892578125px;
+  border-radius: 0px;
+  /* left: 10%; */
+
+
+  left: 100px;
+  top: 10px;
+  border-radius: 0px;
+}
+#footer a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  font-weight: 400;
+}
+#footer nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+/* =============================================Ending Footer section============================================================== */
