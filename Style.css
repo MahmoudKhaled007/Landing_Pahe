@@ -207,26 +207,39 @@ body {
   align-content: center;
   flex-direction: column;
 }
-#portfolio div:nth-child(1) {
-  display: flex;
-  }
-  #portfolio div:nth-child(1) > h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #3e3c6e;
-    padding-top: 50px;
-  }
-  #portfolio div:nth-child(1) > p {
+
+#portfolio div:nth-child(1) > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3e3c6e;
+  padding-top: 56px;
+  padding-left: 100px;
+}
+#portfolio div:nth-child(1) > p {
   font-weight: 400;
   font-size: 26px;
   line-height: 31px;
   color: #000000;
-  }
+  padding: 10px 0px 50px 100px;
+}
 #portfolio div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+#portfolio div:nth-child(2) div figure img {
+  padding-right: 30px;
+}
+#portfolio div:nth-child(2) div figure figcaption h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
+#portfolio div:nth-child(2) div figure figcaption p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 #portfolio .flex {
@@ -243,10 +256,10 @@ body {
   font-weight: 400;
   font-size: 24px;
   color: #000000;
+  background-color: transparent;
 }
 
 /* =============================================Ending portfolio section============================================================== */
-
 
 /* =============================================Starting Footer section============================================================== */
 #footer {
@@ -260,29 +273,26 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #8873ef;
   position: relative;
-  padding-right: 70px ;
+  padding-right: 70px;
 }
 
-#footer  .footer-icon-image {
+#footer .footer-icon-image {
   position: absolute;
   height: 91px;
   width: 247px;
   border-radius: 0px;
   left: 90%;
-
-
 }
-#footer  .footer-icons {
-color: white;
-font-size: 27px;
+#footer .footer-icons {
+  color: white;
+  font-size: 27px;
 }
-#footer  .footer-logo {
+#footer .footer-logo {
   position: absolute;
   height: 72.11663818359375px;
   width: 75.9639892578125px;
   border-radius: 0px;
   /* left: 10%; */
-
 
   left: 100px;
   top: 10px;
@@ -301,7 +311,4 @@ font-size: 27px;
   padding: 0px 20px;
 }
 
-
-
 /* =============================================Ending Footer section============================================================== */
-
