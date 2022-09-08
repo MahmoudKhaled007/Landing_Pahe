@@ -9,6 +9,7 @@
 }
 body {
   font-family: "Inter";
+  width: 100%;
 }
 /* =============================================starting navbar============================================================== */
 #navigation {
@@ -58,6 +59,7 @@ body {
   background-size: 1530px 338px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #home div:nth-child(1) {
   padding: 50px;
@@ -146,9 +148,9 @@ body {
 /* =============================================Starting about section============================================================== */
 #about {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-content: center;
-  align-items: center;
+  flex-wrap:wrap;
 }
 #about div h1 {
   color: #3e3c6e;
@@ -162,8 +164,6 @@ body {
   height: 286px;
   width: 817px;
   font-size: 32px;
-  font-weight: 200;
-  line-height: 39px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -227,6 +227,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 #portfolio div:nth-child(2) div figure img {
   padding-right: 30px;
@@ -301,3 +302,49 @@ body {
   padding: 0px 20px;
 }
 /* =============================================Ending Footer section============================================================== */
+/* =============================================staring @mediaqueries============================================================== */
+@media only screen and (max-width: 1204px)
+{
+  #navigation nav ul
+  {
+    display: none;
+  }
+  #footer div ul
+  {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1332px) {
+  #about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  #about div:nth-child(1) {
+    display: none;
+  }
+  
+  #about div p {
+  padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0em;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  #about div:nth-child(3)>h1{
+    text-align: center;
+  }
+  #about div:nth-child(3) button{
+
+    margin: auto;
+  }
+}
+
+
+/* =============================================Ending @mediaqueries============================================================== */
