@@ -28,14 +28,20 @@ body {
   height: 72px;
   width: 76px;
 }
-#navigation button {
-  font-size: 20px;
-  width: 106px;
-  height: 29px;
+#navigation > a span {
+  font-size: 21px;
+  display: inline-block;
+  width: 103px;
+  height: 33px;
   background: #3e3c6e;
   border: none;
   border-radius: 7px;
   color: #ffffff;
+  padding: 2px 4px;
+}
+#navigation > a :hover {
+  background-color:rgba(62, 60, 110, 0.6);
+  
 }
 #navigation a {
   text-decoration: none;
@@ -93,7 +99,7 @@ body {
   letter-spacing: 0em;
 }
 
-#home div button {
+#home div a span {
   color: black;
   background-color: #ff959b;
   border: none;
@@ -104,7 +110,15 @@ body {
   font-size: 32px;
   line-height: 39px;
   margin-top: 60px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 4px;
 }
+#home div a :hover {
+  color: black;
+  background-color: rgba(255, 149, 155, 0.75);
+}
+
 #home div img {
   width: 605px;
   height: 503px;
@@ -168,7 +182,7 @@ body {
   text-align: left;
 }
 
-#about div button {
+#about div a {
   color: black;
   background-color: #ff959b;
   border: none;
@@ -184,6 +198,13 @@ body {
   padding: 8px 15px;
   gap: 52px;
   margin-top: 30px;
+  text-decoration: none;
+}
+#about div a :hover {
+  color: black;
+  background-color:rgba(255, 149, 155, 0.5);
+
+ 
 }
 
 #about div:nth-child(1) img {
@@ -247,7 +268,7 @@ body {
   justify-content: center;
   padding: 41px;
 }
-#portfolio div:nth-child(3) > button {
+#portfolio div:nth-child(3) > a span {
   width: 173px;
   height: 41px;
   box-sizing: border-box;
@@ -257,9 +278,178 @@ body {
   font-size: 24px;
   color: #000000;
   background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+}
+#portfolio div:nth-child(3) > a :hover {
+  background-color: #ff959b;
 }
 
 /* =============================================Ending portfolio section============================================================== */
+
+/* =============================================Starting time Line section============================================================== */
+
+.timeline {
+  margin: auto;
+  max-width: 941px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 0px 2fr;
+  color: black;
+}
+
+.timeline-component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline-component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 0 3px #106fb4;
+  border-radius: 10px; */
+}
+
+/* LEAVE TILL LAST */
+.timeline-component--bottom {
+  margin-bottom: 0;
+}
+.time-line-bullets {
+  width: 420px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.border {
+  position: absolute;
+  width: 205.02px;
+  height: 0px;
+  left: 834px;
+  top: 1983px;
+  border-top: 3px solid #000000;
+  transform: rotate(-90deg);
+}
+.border2 {
+  position: absolute;
+  width: 75.02px;
+  height: 0;
+  left: 898px;
+  top: 2155px;
+  border-top: 3px solid #000000;
+  transform: rotate(-90deg);
+}
+.border3 {
+  position: absolute;
+  width: 78.02000000000001px;
+  height: 0;
+  left: 897px;
+  top: 2276px;
+  border-top: 3px solid #000000;
+  transform: rotate(-90deg);
+}
+
+.dates2 {
+  color: #8873ef;
+  position: absolute;
+  left: 907px;
+  top: 2089px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.dates3 {
+  color: #8873ef;
+  position: absolute;
+  left: 908px;
+  top: 2200px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.timeline-paragraph {
+  width: 380px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.timeline-middle {
+  position: relative;
+  background: black;
+}
+
+.timeline-point-start {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+}
+
+.timeline-point-end {
+  position: absolute;
+  top: 99px;
+  left: 0px;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+}
+/* LEAVE TILL LAST */
+.timeline-point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline-date {
+  text-align: center;
+  color: #106fb4;
+}
+.dates {
+  color: #8873ef;
+  position: absolute;
+  left: 875px;
+  top: 1841px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.timeline-title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #391472;
+  text-align: right;
+}
+.timeline-title--right {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #391472;
+  text-align: left;
+}
+/* 
+.timeline-date {
+  color: black;
+} */
+
+/* =============================================Ending time Line section============================================================== */
 
 /* =============================================Starting Footer section============================================================== */
 #footer {
