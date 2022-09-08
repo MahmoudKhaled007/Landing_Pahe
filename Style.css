@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "Inter";
+  src: url(assets/Inter/static/Inter-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter";
+}
+/* =============================================starting navbar============================================================== */
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 115px;
+  height: 91px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#navigation nav {
+  padding-top: 8px 0px;
+}
+#navigation img {
+  height: 72px;
+  width: 76px;
+}
+#navigation button {
+  font-size: 20px;
+  width: 106px;
+  height: 29px;
+  background: #3e3c6e;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+}
+#navigation a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+#navigation nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* =============================================Ending navbar============================================================== */
+
+/* =============================================Starting Home section============================================================== */
+#home {
+  background-color: #3e3c6e !important;
+  background: url(assets/images/Vector.png) center bottom/cover no-repeat;
+  background-size: 1530px 338px;
+  display: flex;
+  justify-content: center;
+}
+#home div:nth-child(1) {
+  padding: 50px;
+}
+#home div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+#home div h2 {
+  font-weight: 500;
+  line-height: 44px;
+  color: white;
+}
+#home div h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  text-align: left;
+  color: #ff959b;
+}
+#home div h1 span {
+  font-weight: 800;
+  letter-spacing: 0em;
+  color: white;
+}
+#home div p {
+  color: white;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+#home div button {
+  color: black;
+  background-color: #ff959b;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  width: 253px;
+  height: 51px;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 60px;
+}
+#home div img {
+  width: 605px;
+  height: 503px;
+}
+
+#home div:nth-child(3) span {
+  color: #ff959b;
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  transform: rotate(90deg);
+}
+#home div:nth-child(3) .rotate-icon {
+  transform: rotate(90deg);
+}
+#home div .line {
+  border-top: 1px #ff959b solid;
+  width: 96px;
+  position: absolute;
+  top: 300px;
+  right: 5px;
+
+  transform: rotate(90deg);
+}
+#home div .rotate-icon {
+  position: absolute;
+  top: 400px;
+  right: 5px;
+}
+#home div:nth-child(3) i {
+  color: white;
+  width: 25px;
+  height: 25px;
+  transform: rotate(270deg);
+}
+
+/* =============================================Ending Home section============================================================== */
+
+/* =============================================Starting about section============================================================== */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+#about div h1 {
+  color: #3e3c6e;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+#about div p {
+  padding-top: 20px;
+  height: 286px;
+  width: 817px;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#about div button {
+  color: black;
+  background-color: #ff959b;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  width: 140px;
+  height: 35px;
+  font-size: 24px;
+  line-height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  gap: 52px;
+  margin-top: 30px;
+}
+
+#about div:nth-child(1) img {
+  width: 107px;
+  height: 450px;
+  box-shadow: inset -25px -1px 42px 3px #ffffff;
+}
+
+#about div:nth-child(2) img {
+  box-shadow: inset -25px -1px 42px 3px #ffffff;
+  width: 407.81px;
+  height: 390.63px;
+}
+/* =============================================Ending about section============================================================== */
+
+/* =============================================Starting portfolio section============================================================== */
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#portfolio div:nth-child(1) > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3e3c6e;
+  padding-top: 56px;
+  padding-left: 100px;
+}
+#portfolio div:nth-child(1) > p {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  padding: 10px 0px 50px 100px;
+}
+#portfolio div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#portfolio div:nth-child(2) div figure img {
+  padding-right: 30px;
+}
+#portfolio div:nth-child(2) div figure figcaption h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
+#portfolio div:nth-child(2) div figure figcaption p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#portfolio .flex {
+  display: flex;
+  justify-content: center;
+  padding: 41px;
+}
+#portfolio div:nth-child(3) > button {
+  width: 173px;
+  height: 41px;
+  box-sizing: border-box;
+  border: 1px solid #3e3c6e;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  background-color: transparent;
+}
+
+/* =============================================Ending portfolio section============================================================== */
+
+/* =============================================Starting Footer section============================================================== */
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 115px;
+  height: 91px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #8873ef;
+  position: relative;
+  padding-right: 70px;
+}
+
+#footer .footer-icon-image {
+  position: absolute;
+  height: 91px;
+  width: 247px;
+  border-radius: 0px;
+  left: 90%;
+}
+#footer .footer-icons {
+  color: white;
+  font-size: 27px;
+}
+#footer .footer-logo {
+  position: absolute;
+  height: 72.11663818359375px;
+  width: 75.9639892578125px;
+  border-radius: 0px;
+  /* left: 10%; */
+
+  left: 100px;
+  top: 10px;
+  border-radius: 0px;
+}
+#footer a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  font-weight: 400;
+}
+#footer nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* =============================================Ending Footer section============================================================== */
