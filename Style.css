@@ -207,29 +207,28 @@ body {
   align-content: center;
   flex-direction: column;
 }
-/* #portfolio div:nth-child(1) {
-  } */
+#portfolio div:nth-child(1) {
+  display: flex;
+  }
+  #portfolio div:nth-child(1) > h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #3e3c6e;
+    padding-top: 50px;
+  }
+  #portfolio div:nth-child(1) > p {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  }
 #portfolio div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 60px;
 }
-#portfolio div:nth-child(1) > h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: #3e3c6e;
-  padding-top: 50px;
-  /* gap: 14px; */
-}
-#portfolio div:nth-child(1) > p {
-font-weight: 400;
-font-size: 26px;
-line-height: 31px;
-color: #000000;
 
-}
 #portfolio .flex {
   display: flex;
   justify-content: center;
