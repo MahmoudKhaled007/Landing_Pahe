@@ -40,10 +40,60 @@ body {
   color: #ffffff;
   padding: 2px 4px;
 }
-#navigation > a :hover {
-  background-color:rgba(62, 60, 110, 0.6);
-  
+
+#navigation nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  margin: 0 10px;
 }
+#navigation nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#navigation nav ul li a {
+  position: relative;
+}
+#navigation nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #ff959b;
+  height: 1px;
+}
+#navigation nav ul li a:hover:after {
+  width: 100%;
+}
+
+#navigation nav ul li a {
+  transition: all 2s;
+}
+
+#navigation nav ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+#navigation nav ul li a:hover {
+  color: rgb(43, 43, 43);
+  z-index: 1;
+}
+#navigation nav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
 #navigation a {
   text-decoration: none;
   font-style: normal;
@@ -100,7 +150,6 @@ body {
   line-height: 27px;
   letter-spacing: 0em;
 }
-
 
 #home div a span {
   color: black;
@@ -162,9 +211,9 @@ body {
 /* =============================================Starting about section============================================================== */
 #about {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 #about div h1 {
   color: #3e3c6e;
@@ -349,12 +398,22 @@ body {
   border-top: 3px solid #000000;
   transform: rotate(-90deg);
 }
-
+.dates {
+  color: #8873ef;
+  position: relative;
+  left: 89%;
+  top: -13%;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .dates2 {
   color: #8873ef;
-  position: absolute;
-  left: 907px;
-  top: 2089px;
+  position: relative;
+  left: -10%;
+  top: -72%;
   font-size: 24px;
   font-weight: 800;
   line-height: 29px;
@@ -363,9 +422,9 @@ body {
 }
 .dates3 {
   color: #8873ef;
-  position: absolute;
-  left: 908px;
-  top: 2200px;
+  position: relative;
+  left: 98%;
+  top: -13%;
   font-size: 24px;
   font-weight: 800;
   line-height: 29px;
@@ -417,17 +476,7 @@ body {
   text-align: center;
   color: #106fb4;
 }
-.dates {
-  color: #8873ef;
-  position: absolute;
-  left: 875px;
-  top: 1841px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-}
+
 .timeline-title {
   margin: 0;
   font-size: 1.15em;
@@ -465,7 +514,6 @@ body {
   height: 91px;
   width: 247px;
   border-radius: 0px;
-
 }
 #footer .footer-icons {
   color: white;
@@ -488,19 +536,96 @@ body {
   display: inline-block;
   padding: 0px 20px;
 }
+
+#footer div ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  margin: 0 10px;
+}
+
+#footer div ul li a:hover {
+  background-color: rgba(62, 60, 110, 0.5);
+}
+
+#footer div ul li a {
+  position: relative;
+}
+#footer div ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #391472;
+  height: 1px;
+}
+#footer div ul li a:hover:after {
+  width: 100%;
+}
+
+#footer div ul li a {
+  transition: all 2s;
+}
+
+#footer div ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+#footer div ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+#footer div ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
 /* =============================================Ending Footer section============================================================== */
 /* =============================================staring @mediaqueries============================================================== */
-@media only screen and (max-width: 1204px)
-{
-  #navigation nav ul
-  {
+@media only screen and (max-width: 1204px) {
+  #navigation nav ul {
     display: none;
   }
-  #footer div ul
-  {
+  #footer div ul {
     display: none;
   }
 
+  .border {
+    left: 549px;
+    top: 2969px;
+  }
+  .border2 {
+    left: 614px;
+    top: 3140px;
+  }
+  .border3 {
+    left: 612px;
+    top: 3250px;
+  }
+  .dates {
+    left: 525px;
+    top: 2818px;
+  }
+
+  .dates2 {
+    left: 625px;
+    top: 3074px;
+  }
+  .dates3 {
+    left: 627px;
+    top: 3183px;
+  }
 }
 
 @media only screen and (max-width: 1332px) {
@@ -514,9 +639,9 @@ body {
   #about div:nth-child(1) {
     display: none;
   }
-  
+
   #about div p {
-  padding: 20px;
+    padding: 20px;
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 0em;
@@ -524,14 +649,38 @@ body {
     width: auto;
     height: auto;
   }
-  #about div:nth-child(3)>h1{
+  #about div:nth-child(3) > h1 {
     text-align: center;
   }
   #about div:nth-child(3) a {
+    margin: auto;
+  }
 
-margin: auto;
+  .border {
+    left: 38%;
+    top: 864%;
+  }
+  .border2 {
+    left: 45%;
+    top: 916%;
+  }
+  .border3 {
+    left: 45%;
+    top: 946%;
+  }
+  .dates {
+    left: 90%;
+    top: -12%;
+  }
+
+  .dates2 {
+    left: -10%;
+    top: -52%;
+  }
+  .dates3 {
+    left: 99%;
+    top: -6%;
   }
 }
-
 
 /* =============================================Ending @mediaqueries============================================================== */
