@@ -194,9 +194,8 @@ body {
 
 #about div:nth-child(2) img {
   box-shadow: inset -25px -1px 42px 3px #ffffff;
-  width:407.81px;
+  width: 407.81px;
   height: 390.63px;
-
 }
 /* =============================================Ending about section============================================================== */
 
@@ -204,7 +203,7 @@ body {
 
 #portfolio {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   flex-direction: column;
 }
@@ -216,31 +215,35 @@ body {
   align-content: center;
   gap: 60px;
 }
-#portfolio div:nth-child(1) h2 {
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-color: #3E3C6E;
-padding-top: 50px;
-}
-
-/* #portfolio h2 {
-  font-size: 36px;
+#portfolio div:nth-child(1) > h2 {
   font-weight: 700;
+  font-size: 36px;
   line-height: 44px;
-  letter-spacing: 0em;
-  display: flex;
-  text-align: left;
   color: #3e3c6e;
-  margin-top: 60px;
+  padding-top: 50px;
+  /* gap: 14px; */
 }
+#portfolio div:nth-child(1) > p {
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
+color: #000000;
 
-#portfolio div:nth-child(2) img{
-  height: 417px;
-  width: 417px;
-  left: 0px;
-  top: 0px;
-  border-radius: 10px;
-} */ 
+}
+#portfolio .flex {
+  display: flex;
+  justify-content: center;
+  padding: 41px;
+}
+#portfolio div:nth-child(3) > button {
+  width: 173px;
+  height: 41px;
+  box-sizing: border-box;
+  border: 1px solid #3e3c6e;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
 
 /* =============================================Ending portfolio section============================================================== */
