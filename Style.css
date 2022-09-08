@@ -9,6 +9,8 @@
 }
 body {
   font-family: "Inter";
+  overflow: auto; /* Hide scrollbars */
+
 }
 /* =============================================starting navbar============================================================== */
 #navigation {
@@ -221,12 +223,15 @@ body {
   font-size: 26px;
   line-height: 31px;
   color: #000000;
+<<<<<<< Updated upstream
   padding: 10px 0px 50px 100px;
 }
 #portfolio div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-content: center;
+=======
+>>>>>>> Stashed changes
 }
 #portfolio div:nth-child(2) div figure img {
   padding-right: 30px;
@@ -312,3 +317,81 @@ body {
 }
 
 /* =============================================Ending Footer section============================================================== */
+<<<<<<< Updated upstream
+=======
+
+/* =============================================Starting TimeLine section============================================================== */
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #777777;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 3px #106fb4;
+  border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #d6d6d6;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #3f8bc3;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+  color: #106fb4;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #391472;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+}
+
+.timeline__date {
+  color: #106fb4;
+}
+
+.titol {
+  font-style: italic;
+}
+/* =============================================Ending TimeLine section============================================================== */
+>>>>>>> Stashed changes
